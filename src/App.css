@@ -1,0 +1,23 @@
+/*********************
+    Global Settings
+*********************/
+
+::before,
+::after,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Century Gothic", 'Courier New', Courier, sans-serif;
+}
+
+figure {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
