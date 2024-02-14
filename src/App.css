@@ -21,3 +21,171 @@ img {
 ul {
     list-style: none;
 }
+
+#headers {
+    display: flex;
+    padding: 2vh 20vw;
+    font-weight: bold;
+    gap: 0 10px;
+}
+
+#headers > header {
+    width: 28vw;
+    padding: 3vh 1vw;
+}
+
+#left-header {
+    background-color: aliceblue;
+}
+
+#right-header {
+    background-color: whitesmoke;
+}
+
+#headers > header > a {
+    font-weight: normal;
+    font-size: small;
+}
+
+#vehicle-choice {
+    margin: 1vh 25vw;
+    font-weight: bold;
+    width: 50vw;
+    font-size: larger;
+    display: grid;
+    grid-template-areas: 
+                                        "span header . button"
+                                        "span p . .";
+    border: 1px solid lightgrey;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+#vehicle-choice > span {
+    grid-area: span;
+    font-size: x-large;
+}
+
+#vehicle-choice > header {
+    grid-area: header;
+    font-size: x-large;
+}
+
+#vehicle-choice > p {
+    font-size: small;
+    font-weight: normal;
+    grid-area: p;
+    width: 25vw;
+}
+
+#vehicle-choice > button {
+    width: max-content;
+    grid-area: button;
+    padding: 1vh 1vw;
+    font-weight: bold;
+    color: forestgreen;
+    background-color: snow;
+    border: 1px solid lightgrey;
+}
+
+main {
+    display: grid;
+    margin: 0 20vw;
+}
+
+main > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vh 2vw;
+}
+
+article > figure {
+    padding: 0;
+}
+
+figcaption {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+article > p,
+article > a {
+    font-size: small;
+}
+
+article > p {
+    line-height: 2vh;
+    margin-bottom: 2vh;
+}
+
+article > a {
+    color: forestgreen;
+}
+
+main > section:last-of-type {
+    display: grid;
+    margin-top: 10vh;
+    grid-template-columns: 1fr;
+}
+
+main > section:last-of-type > header {
+    width: inherit;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+
+main > section:last-of-type > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0 2vw;
+}
+
+main > section:last-of-type > ul > li > figure > figcaption {
+    font-size: medium;
+    text-align: center;
+}
+
+main > section:last-of-type > ul > li > p {
+    text-align: center;
+    font-size: small;
+}
+
+footer > section:first-of-type {
+    display: flex;
+    padding: 2vh 20vw;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    justify-content: space-between;
+}
+
+footer > section:first-of-type > p {
+    width: 100px;
+}
+
+footer > section:first-of-type > form {
+    display: flex;
+    gap: 0 1vw;
+}
+
+footer > section:first-of-type > form > p {
+    border: 2px solid grey;
+    padding: 1vh 5px 1vh 0;
+    border-left: none;
+    border-right: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+footer > section:first-of-type > form > button {
+    color: snow;
+    font-weight: 800;
+    padding: 1vh 10px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+footer > section:first-of-type > form:last-of-type {
+    gap: 0;
+}
