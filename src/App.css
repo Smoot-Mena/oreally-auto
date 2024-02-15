@@ -126,6 +126,7 @@ article > a {
 main > section:last-of-type {
     display: grid;
     margin-top: 10vh;
+    margin-bottom: 5vh;
     grid-template-columns: 1fr;
 }
 
@@ -188,4 +189,38 @@ footer > section:first-of-type > form > button {
 
 footer > section:first-of-type > form:last-of-type {
     gap: 0;
+}
+
+footer > section:first-of-type > form:last-of-type > label {
+    font-weight: bold;
+    color: grey;
+    margin-top: 1.5vh;
+    margin-right: 1vw;
+}
+
+footer > section:first-of-type > form:last-of-type > input {
+    width: 15vw;
+    padding: 1vh 1vw;
+    font-weight: bold;
+}
+
+footer > section:last-of-type {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 2vh 20vw;
+    margin-top: 2vh;
+}
+
+footer > section:last-of-type > ul > li {
+    line-height: 3vh;
+    margin-bottom: 2vh;
+}
+
+footer > section:last-of-type > ul > li > a {
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+footer > section:last-of-type > ul > li > p > a {
+    color: #2e2e2e;
 }
